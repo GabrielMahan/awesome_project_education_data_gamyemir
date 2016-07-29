@@ -26,7 +26,7 @@ class SchoolGraduationOutcomes < ActiveRecord::Migration
     t.decimal :total_regents_of_cohort
     t.decimal :total_regents_of_grads
 
-    t.timestamps, {null: false}
+    t.timestamps #, {null: false}
     end
   end
 end
