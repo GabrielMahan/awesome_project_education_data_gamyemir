@@ -1,0 +1,3 @@
+class SchoolGraduationOutcome < ActiveRecord::Base
+  # Remember to create a migration!
+end
