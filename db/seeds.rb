@@ -14,6 +14,9 @@ end
 demo_data = JSON.parse(open("https://data.cityofnewyork.us/resource/tvf6-bvfe.json").read)
 
 demo_data.each do |args|
-  args.each {|key, value| key = key.to_sym }
+  args.each do |key, value|
+    key = key.to_sym
+  end
+  args["name"].gsub!(/\s{2,50}/, "")
   SchoolDemographic.create(args)
 end

@@ -40,7 +40,7 @@ class SchoolDemographics < ActiveRecord::Migration
       t.integer :female_num
       t.decimal :female_per
 
-      t.timestamps, {null: false}
+      t.timestamps
 
     end
   end
